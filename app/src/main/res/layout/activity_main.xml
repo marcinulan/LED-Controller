@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="395dp"
+        android:layout_height="707dp"
+        android:gravity="clip_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="166dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_column="1"
+                android:text="@string/title_app"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/led_lights"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="103dp"
+                android:layout_height="65dp"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_blue_bright"
+                android:lineSpacingExtra="12sp"
+                android:text="@string/switch_lights"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/red_light"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="20dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/holo_red_dark"
+                android:text="@string/red"
+                android:textColor="@android:color/black"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/green_light"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="20dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/holo_green_dark"
+                android:text="@string/green"
+                android:textColor="@android:color/black"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/blue_light"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="@string/blue"
+                android:textColor="@android:color/black"
+                android:typeface="sans" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/led_blink_red"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_red_dark"
+                android:lineSpacingExtra="12sp"
+                android:text="@string/blink_red"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="276dp" />
+
+            <Button
+                android:id="@+id/led_blink_green"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_dark"
+                android:lineSpacingExtra="12sp"
+                android:text="@string/blink_green"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="276dp"
+                tools:layout_editor_absoluteY="131dp" />
+
+            <Button
+                android:id="@+id/led_rainbow"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_purple"
+                android:lineSpacingExtra="12sp"
+                android:text="@string/rainbow"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="8dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/led_logs"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_column="1"
+                android:layout_marginBottom="8dp"
+                android:text="@string/led_logs"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="24sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+                tools:layout_editor_absoluteX="41dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

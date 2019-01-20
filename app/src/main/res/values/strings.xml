@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LEDs Controller</string>
+    <string name="title_app">Welcome in LED Controller App!</string>
+    <string name="switch_lights">Switch Lights</string>
+    <string name="red">RED</string>
+    <string name="green">GREEN</string>
+    <string name="blue">BLUE</string>
+    <string name="blink_red">Blink Red</string>
+    <string name="blink_green">Blink green</string>
+    <string name="rainbow">Rainbow</string>
+    <string name="led_logs">led_logs</string>
+</resources>

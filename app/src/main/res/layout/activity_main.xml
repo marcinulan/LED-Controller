@@ -9,32 +9,16 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="325dp"
-        android:layout_height="707dp"
-        android:gravity="clip_vertical"
+        android:layout_width="385dp"
+        android:layout_height="449dp"
+        android:gravity="start"
         android:orientation="vertical"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="80dp"
-                android:layout_height="123dp"
-                android:layout_column="1"
-                android:layout_marginTop="110dp"
-                android:layout_marginBottom="30dp"
-                android:text="@string/title_app"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                tools:layout_editor_absoluteX="41dp"
-                tools:layout_editor_absoluteY="16dp" />
-        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
@@ -44,9 +28,10 @@
                 android:id="@+id/led_lights"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
-                android:layout_height="65dp"
+                android:layout_height="99dp"
                 android:layout_column="1"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@android:color/holo_blue_bright"
@@ -55,6 +40,7 @@
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp" />
+
         </TableRow>
 
         <TableRow
@@ -64,11 +50,11 @@
             <Button
                 android:id="@+id/red_light"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="65dp"
-                android:layout_marginBottom="10dp"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@android:color/holo_red_dark"
                 android:text="@string/red"
                 android:textColor="@android:color/black"
@@ -77,11 +63,11 @@
             <Button
                 android:id="@+id/green_light"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="65dp"
-                android:layout_marginBottom="10dp"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@android:color/holo_green_dark"
                 android:text="@string/green"
                 android:textColor="@android:color/black"
@@ -90,11 +76,11 @@
             <Button
                 android:id="@+id/blue_light"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="65dp"
-                android:layout_marginBottom="10dp"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@android:color/holo_blue_dark"
                 android:text="@string/blue"
                 android:textColor="@android:color/black"
@@ -109,8 +95,8 @@
             <Button
                 android:id="@+id/led_blink_red"
                 style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="65dp"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
@@ -125,8 +111,8 @@
             <Button
                 android:id="@+id/led_blink_green"
                 style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="65dp"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
@@ -142,8 +128,8 @@
             <Button
                 android:id="@+id/led_rainbow"
                 style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="65dp"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
@@ -166,15 +152,54 @@
                 android:layout_width="match_parent"
                 android:layout_height="53dp"
                 android:layout_column="1"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/led_logs"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                android:textSize="24sp"
+                android:textSize="12sp"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
                 tools:layout_editor_absoluteX="41dp" />
+
+            <Button
+                android:id="@+id/led_custom"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_purple"
+                android:lineSpacingExtra="12sp"
+                android:text="@string/set"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="8dp" />
+
         </TableRow>
 
     </TableLayout>
+
+
+    <SeekBar
+        android:id="@+id/led_level"
+        android:layout_width="383dp"
+        android:layout_height="114dp"
+        android:layout_column="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:max="255"
+        android:thumb="@color/colorAccent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
 
 </android.support.constraint.ConstraintLayout>
